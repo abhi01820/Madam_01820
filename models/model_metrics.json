@@ -1,0 +1,244 @@
+{
+  "eda": {
+    "n_rows": 2500,
+    "n_columns": 28,
+    "missing_values": {},
+    "duplicate_rows": 0,
+    "class_distribution": {
+      "Moderate synthetic risk category": 1252,
+      "Lower synthetic risk category": 1015,
+      "Higher synthetic risk category": 233
+    },
+    "dtypes": {
+      "age": "int32",
+      "sex": "str",
+      "height_cm": "float64",
+      "weight_kg": "float64",
+      "waist_cm": "float64",
+      "bmi": "float64",
+      "systolic_bp": "float64",
+      "diastolic_bp": "float64",
+      "resting_heart_rate": "float64",
+      "cholesterol_total": "float64",
+      "cholesterol_ldl": "float64",
+      "cholesterol_hdl": "float64",
+      "triglycerides": "float64",
+      "fasting_glucose": "float64",
+      "hba1c": "float64",
+      "physical_activity_min_per_week": "int64",
+      "sleep_hours": "float64",
+      "water_liters": "float64",
+      "smoking_status": "str",
+      "alcohol_frequency": "str",
+      "fruit_veg_servings": "int32",
+      "sugary_drinks_per_week": "int32",
+      "family_history_diabetes": "int64",
+      "family_history_heart_disease": "int64",
+      "serum_creatinine": "float64",
+      "alt_sgpt": "float64",
+      "synthetic_risk_score": "float64",
+      "risk_category": "str"
+    }
+  },
+  "baseline_logistic_regression": {
+    "model_name": "Logistic Regression Baseline",
+    "accuracy": 0.816,
+    "precision_macro": 0.8317,
+    "recall_macro": 0.7992,
+    "f1_macro": 0.8131,
+    "precision_weighted": 0.8195,
+    "recall_weighted": 0.816,
+    "f1_weighted": 0.8155,
+    "confusion_matrix": [
+      [
+        155,
+        48,
+        0
+      ],
+      [
+        27,
+        217,
+        6
+      ],
+      [
+        0,
+        11,
+        36
+      ]
+    ],
+    "labels": [
+      "Lower synthetic risk category",
+      "Moderate synthetic risk category",
+      "Higher synthetic risk category"
+    ],
+    "classification_report": {
+      "Higher synthetic risk category": {
+        "precision": 0.8571428571428571,
+        "recall": 0.7659574468085106,
+        "f1-score": 0.8089887640449438,
+        "support": 47.0
+      },
+      "Lower synthetic risk category": {
+        "precision": 0.8516483516483516,
+        "recall": 0.7635467980295566,
+        "f1-score": 0.8051948051948052,
+        "support": 203.0
+      },
+      "Moderate synthetic risk category": {
+        "precision": 0.7862318840579711,
+        "recall": 0.868,
+        "f1-score": 0.8250950570342205,
+        "support": 250.0
+      },
+      "accuracy": 0.816,
+      "macro avg": {
+        "precision": 0.8316743642830599,
+        "recall": 0.799168081612689,
+        "f1-score": 0.8130928754246565,
+        "support": 500.0
+      },
+      "weighted avg": {
+        "precision": 0.8194566013696449,
+        "recall": 0.816,
+        "f1-score": 0.8155015632464259,
+        "support": 500.0
+      }
+    }
+  },
+  "random_forest": {
+    "model_name": "Random Forest Classifier",
+    "accuracy": 0.772,
+    "precision_macro": 0.8525,
+    "recall_macro": 0.6637,
+    "f1_macro": 0.7082,
+    "precision_weighted": 0.7942,
+    "recall_weighted": 0.772,
+    "f1_weighted": 0.7645,
+    "confusion_matrix": [
+      [
+        147,
+        56,
+        0
+      ],
+      [
+        29,
+        221,
+        0
+      ],
+      [
+        0,
+        29,
+        18
+      ]
+    ],
+    "labels": [
+      "Lower synthetic risk category",
+      "Moderate synthetic risk category",
+      "Higher synthetic risk category"
+    ],
+    "classification_report": {
+      "Higher synthetic risk category": {
+        "precision": 1.0,
+        "recall": 0.3829787234042553,
+        "f1-score": 0.5538461538461539,
+        "support": 47.0
+      },
+      "Lower synthetic risk category": {
+        "precision": 0.8352272727272727,
+        "recall": 0.7241379310344828,
+        "f1-score": 0.7757255936675461,
+        "support": 203.0
+      },
+      "Moderate synthetic risk category": {
+        "precision": 0.7222222222222222,
+        "recall": 0.884,
+        "f1-score": 0.7949640287769785,
+        "support": 250.0
+      },
+      "accuracy": 0.772,
+      "macro avg": {
+        "precision": 0.8524831649831649,
+        "recall": 0.6637055514795794,
+        "f1-score": 0.7081785920968927,
+        "support": 500.0
+      },
+      "weighted avg": {
+        "precision": 0.7942133838383838,
+        "recall": 0.772,
+        "f1-score": 0.7644881438790514,
+        "support": 500.0
+      }
+    }
+  },
+  "best_model": "Logistic Regression Baseline",
+  "top_features": [
+    [
+      "diastolic_bp",
+      0.09967
+    ],
+    [
+      "systolic_bp",
+      0.08972
+    ],
+    [
+      "bmi",
+      0.0744
+    ],
+    [
+      "fasting_glucose",
+      0.05907
+    ],
+    [
+      "age",
+      0.05786
+    ],
+    [
+      "waist_cm",
+      0.05239
+    ],
+    [
+      "cholesterol_total",
+      0.04719
+    ],
+    [
+      "cholesterol_ldl",
+      0.0465
+    ],
+    [
+      "triglycerides",
+      0.04612
+    ],
+    [
+      "weight_kg",
+      0.0451
+    ]
+  ],
+  "feature_cols": [
+    "age",
+    "sex",
+    "height_cm",
+    "weight_kg",
+    "waist_cm",
+    "bmi",
+    "systolic_bp",
+    "diastolic_bp",
+    "resting_heart_rate",
+    "cholesterol_total",
+    "cholesterol_ldl",
+    "cholesterol_hdl",
+    "triglycerides",
+    "fasting_glucose",
+    "hba1c",
+    "physical_activity_min_per_week",
+    "sleep_hours",
+    "water_liters",
+    "smoking_status",
+    "alcohol_frequency",
+    "fruit_veg_servings",
+    "sugary_drinks_per_week",
+    "family_history_diabetes",
+    "family_history_heart_disease",
+    "serum_creatinine",
+    "alt_sgpt"
+  ]
+}
