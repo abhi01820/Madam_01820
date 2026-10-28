@@ -2,7 +2,7 @@
 
 import streamlit as st
 import random
-from src.ui_components import inject_custom_css, render_hero, render_footer
+from src.ui_components import inject_custom_css, render_hero
 from src.recommendation_engine import generate_meal_plan
 
 inject_custom_css()

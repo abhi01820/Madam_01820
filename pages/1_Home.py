@@ -1,7 +1,7 @@
 """Home Page for HealthRisk AI."""
 
 import streamlit as st
-from src.ui_components import inject_custom_css, render_hero, render_footer
+from src.ui_components import inject_custom_css, render_hero
 
 inject_custom_css()
 

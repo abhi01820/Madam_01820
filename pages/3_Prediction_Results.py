@@ -8,8 +8,7 @@ from src.ui_components import (
     render_metric_card,
     create_risk_gauge_chart,
     create_radar_profile,
-    create_probability_distribution_chart,
-    render_footer
+    create_probability_distribution_chart
 )
 from src.validation import detect_emergency_flags
 from src.recommendation_engine import (

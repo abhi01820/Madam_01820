@@ -1,7 +1,5 @@
 # HealthRisk AI 🩺
 
-**Done by Akhila Pappala**
-
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![Streamlit App](https://img.shields.io/badge/Streamlit-1.66-FF4B4B.svg)](https://streamlit.io/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.9-F7931E.svg)](https://scikit-learn.org/)
@@ -194,12 +192,6 @@ git push -u origin main
 - **Lipid Management:** NCEP Adult Treatment Panel III (ATP III) Guidelines (Circulation 2002; 106: 3143).
 - **Glycemic Thresholds:** American Diabetes Association (ADA) Standards of Care in Diabetes 2024.
 - **Dietary Guidelines:** ICMR - National Institute of Nutrition (NIN) Dietary Guidelines for Indians (2024).
-
----
-
-## Author & Credits
-
-Done by **Akhila Pappala**
 
 ---
 

@@ -5,7 +5,7 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from src.ui_components import inject_custom_css, render_hero, create_confusion_matrix_chart, render_footer
+from src.ui_components import inject_custom_css, render_hero, create_confusion_matrix_chart
 
 inject_custom_css()
 

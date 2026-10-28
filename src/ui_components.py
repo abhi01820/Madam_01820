@@ -475,7 +475,3 @@ def create_confusion_matrix_chart(cm: List[List[int]], labels: List[str]) -> go.
     return fig
 
 
-def render_footer():
-    """No-op footer; attribution displayed exclusively in sidebar as requested."""
-    pass
-

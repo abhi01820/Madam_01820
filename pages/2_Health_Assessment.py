@@ -1,7 +1,7 @@
 """Health Assessment Form Page for HealthRisk AI."""
 
 import streamlit as st
-from src.ui_components import inject_custom_css, render_hero, render_footer
+from src.ui_components import inject_custom_css, render_hero
 from src.validation import validate_health_inputs, calculate_bmi
 from src.recommendation_engine import assess_bmi
 from src.predict import RiskPredictor
