@@ -105,8 +105,6 @@ st.markdown("""
 - **Joblib**: Atomic serialization and deserialization of fitted pipelines.
 - **No Paid APIs or Cloud Databases**: Completely self-contained, offline-runnable, and zero-token runtime.
 - **Streamlit Community Cloud Ready**: No hardcoded absolute file paths; all assets resolved relative to project root.
-- **Project Lead & Developer**: Done by **Akhila Pappala**.
 """)
 
-render_footer()
 

@@ -159,5 +159,4 @@ with col_arch2:
     - **Cultural Nutrition**: Focuses on unpolished millets, lentils, whole grams, and regional Indian preparation methods.
     """)
 
-render_footer()
 

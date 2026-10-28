@@ -595,5 +595,4 @@ if st.button("Analyze Health Profile & Run ML Prediction", type="primary", use_c
         except Exception as e:
             st.error(f"Error during ML inference: {str(e)}")
 
-render_footer()
 

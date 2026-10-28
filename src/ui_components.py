@@ -476,11 +476,6 @@ def create_confusion_matrix_chart(cm: List[List[int]], labels: List[str]) -> go.
 
 
 def render_footer():
-    """Render custom application footer crediting Akhila Pappala."""
-    html = """
-    <div style="text-align: center; margin-top: 3.5rem; padding: 1.5rem 0 1rem 0; border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 0.95rem; color: #94A3B8;">
-        HealthRisk AI &bull; Done by <strong style="color: #00D2BA; font-size: 1.05rem;">Akhila Pappala</strong>
-    </div>
-    """
-    st.markdown(html, unsafe_allow_html=True)
+    """No-op footer; attribution displayed exclusively in sidebar as requested."""
+    pass
 

@@ -331,5 +331,4 @@ st.markdown("""
 if st.button("Generate Tailored South Indian Meal Plan", type="primary", use_container_width=True):
     st.switch_page("pages/4_Diet_Planner.py")
 
-render_footer()
 

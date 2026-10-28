@@ -160,5 +160,4 @@ with col_bg2:
 
 st.caption("Note: Meals are qualitatively curated for nutritional balance. Never engage in extreme caloric restriction without clinical supervision.")
 
-render_footer()
 
