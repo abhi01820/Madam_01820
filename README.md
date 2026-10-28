@@ -1,5 +1,7 @@
 # HealthRisk AI 🩺
 
+**Done by Akhila Pappala**
+
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![Streamlit App](https://img.shields.io/badge/Streamlit-1.66-FF4B4B.svg)](https://streamlit.io/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.9-F7931E.svg)](https://scikit-learn.org/)
@@ -195,6 +197,13 @@ git push -u origin main
 
 ---
 
+## Author & Credits
+
+Done by **Akhila Pappala**
+
+---
+
 ## License
 
 This project is licensed under the MIT License.
+

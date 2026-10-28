@@ -8,7 +8,8 @@ from src.ui_components import (
     render_metric_card,
     create_risk_gauge_chart,
     create_radar_profile,
-    create_probability_distribution_chart
+    create_probability_distribution_chart,
+    render_footer
 )
 from src.validation import detect_emergency_flags
 from src.recommendation_engine import (
@@ -329,3 +330,6 @@ st.markdown("""
 
 if st.button("Generate Tailored South Indian Meal Plan", type="primary", use_container_width=True):
     st.switch_page("pages/4_Diet_Planner.py")
+
+render_footer()
+

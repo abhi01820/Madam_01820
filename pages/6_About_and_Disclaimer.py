@@ -1,7 +1,7 @@
 """About & Clinical Disclaimer Page for HealthRisk AI."""
 
 import streamlit as st
-from src.ui_components import inject_custom_css, render_hero
+from src.ui_components import inject_custom_css, render_hero, render_footer
 
 inject_custom_css()
 
@@ -105,4 +105,8 @@ st.markdown("""
 - **Joblib**: Atomic serialization and deserialization of fitted pipelines.
 - **No Paid APIs or Cloud Databases**: Completely self-contained, offline-runnable, and zero-token runtime.
 - **Streamlit Community Cloud Ready**: No hardcoded absolute file paths; all assets resolved relative to project root.
+- **Project Lead & Developer**: Done by **Akhila Pappala**.
 """)
+
+render_footer()
+

@@ -2,7 +2,7 @@
 
 import streamlit as st
 import random
-from src.ui_components import inject_custom_css, render_hero
+from src.ui_components import inject_custom_css, render_hero, render_footer
 from src.recommendation_engine import generate_meal_plan
 
 inject_custom_css()
@@ -159,3 +159,6 @@ with col_bg2:
     """, unsafe_allow_html=True)
 
 st.caption("Note: Meals are qualitatively curated for nutritional balance. Never engage in extreme caloric restriction without clinical supervision.")
+
+render_footer()
+

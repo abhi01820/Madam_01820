@@ -7,7 +7,7 @@ Self-contained, offline-runnable, and ready for Streamlit Community Cloud.
 import streamlit as st
 
 st.set_page_config(
-    page_title="HealthRisk AI - Cardiometabolic Health Analytics",
+    page_title="Madam Gari Health-AI",
     page_icon="🩺",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -30,4 +30,15 @@ pages = {
 }
 
 pg = st.navigation(pages)
+
+with st.sidebar:
+    st.markdown("---")
+    st.markdown("""
+    <div style="font-size: 0.85rem; color: #94A3B8; text-align: center; padding: 0.5rem 0;">
+        HealthRisk AI<br>
+        Done by <strong style="color: #00D2BA;">Akhila Pappala</strong>
+    </div>
+    """, unsafe_allow_html=True)
+
 pg.run()
+

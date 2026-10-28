@@ -1,7 +1,7 @@
 """Health Assessment Form Page for HealthRisk AI."""
 
 import streamlit as st
-from src.ui_components import inject_custom_css, render_hero
+from src.ui_components import inject_custom_css, render_hero, render_footer
 from src.validation import validate_health_inputs, calculate_bmi
 from src.recommendation_engine import assess_bmi
 from src.predict import RiskPredictor
@@ -594,3 +594,6 @@ if st.button("Analyze Health Profile & Run ML Prediction", type="primary", use_c
             st.switch_page("pages/3_Prediction_Results.py")
         except Exception as e:
             st.error(f"Error during ML inference: {str(e)}")
+
+render_footer()
+

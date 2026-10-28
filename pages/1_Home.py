@@ -1,7 +1,7 @@
 """Home Page for HealthRisk AI."""
 
 import streamlit as st
-from src.ui_components import inject_custom_css, render_hero
+from src.ui_components import inject_custom_css, render_hero, render_footer
 
 inject_custom_css()
 
@@ -158,3 +158,6 @@ with col_arch2:
     - **No Missing-Data Hallucinations**: Missing or unassessed lab measurements are distinctly styled in dashed grey, never marked 'healthy'.
     - **Cultural Nutrition**: Focuses on unpolished millets, lentils, whole grams, and regional Indian preparation methods.
     """)
+
+render_footer()
+
